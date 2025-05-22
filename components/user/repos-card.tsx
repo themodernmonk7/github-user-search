@@ -18,7 +18,7 @@ const ReposCard: React.FC<PropsType> = ({ title }) => {
   return (
     <div className="bg-white rounded-lg shadow p-6 h-full">
       <div className="flex items-center mb-6">
-        <TrendingUp className="h-6 w-6 text-gray-700 mr-2" />
+        <TrendingUp className="size-6 text-gray-700 mr-2" />
         <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
       </div>
 
@@ -35,12 +35,12 @@ const ReposCard: React.FC<PropsType> = ({ title }) => {
 
             <div className="flex items-center space-x-4">
               <div className="flex items-center text-sm text-gray-600">
-                <Star className="h-4 w-4 text-yellow-500 mr-1" />
+                <Star className="size-4 text-yellow-500 mr-1" />
                 <span>{repo.stars}</span>
               </div>
 
               <div className="flex items-center text-sm text-gray-600">
-                <GitFork className="h-4 w-4 text-gray-500 mr-1" />
+                <GitFork className="size-4 text-gray-500 mr-1" />
                 <span>{repo.forks}</span>
               </div>
             </div>

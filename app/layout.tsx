@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import GithubProvider from "@/context/github"
+import { Navbar } from "@/components/layout"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GithubProvider>{children}</GithubProvider>
+        <GithubProvider>
+          <div className="min-h-screen bg-gray-50">
+            <Navbar />
+            {children}
+          </div>
+        </GithubProvider>
       </body>
     </html>
   )

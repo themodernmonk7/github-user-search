@@ -27,7 +27,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           type="submit"
           className="absolute left-0 top-0 mt-3 ml-3 text-gray-500 hover:text-gray-700 transition-colors duration-200"
         >
-          <Search className="h-6 w-6" />
+          <Search className="size-6" />
         </button>
       </form>
     </div>
